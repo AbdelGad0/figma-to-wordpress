@@ -1,0 +1,10 @@
+# WordPress theme - Figma to WordPress conversion showcase
+# Local / generated files
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+*.mo
+
+# Keep wp-config.php OUT of any site-level repo (lives above the theme)
+wp-config.php

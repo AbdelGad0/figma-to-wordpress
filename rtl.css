@@ -1,0 +1,145 @@
+/*
+ * Positively Landing Page - RTL Support
+ * Right-to-Left CSS Overrides for Arabic
+ */
+
+[dir="rtl"] {
+    body {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    .site-header {
+        /* Reverse flex direction */
+    }
+    
+    .site-branding {
+        order: 1;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .main-navigation {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .menu {
+        direction: ltr;
+        text-align: right;
+    }
+    
+    .menu a {
+        text-align: right;
+    }
+    
+    .menu a::after {
+        left: auto;
+        right: 0;
+    }
+    
+    .menu a:hover::after,
+    .menu a.active::after {
+        right: 0;
+        left: auto;
+        transform: scaleX(-1);
+    }
+    
+    .hero-content {
+        text-align: right;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .hero-section h1 {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .features-section .grid-3,
+    .services-section .grid-3 {
+        direction: ltr;
+        text-align: right;
+    }
+    
+    .feature-item,
+    .service-item,
+    .testimonial-item {
+        text-align: right;
+        direction: ltr;
+    }
+    
+    .feature-item .icon {
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+    
+    .testimonial-item .quote {
+        direction: rtl;
+    }
+    
+    .testimonial-item .author,
+    .testimonial-item .role {
+        text-align: right;
+    }
+    
+    .contact-form {
+        text-align: right;
+    }
+    
+    .form-group {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .footer-container {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    .footer-content {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    
+    .footer-branding {
+        order: 1;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
+    .footer-navigation {
+        order: 2;
+        margin-right: auto;
+        margin-left: 0;
+    }
+    
+    .footer-menu {
+        direction: rtl;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    
+    .social-link {
+        margin-right: 0;
+        margin-left: 0.5rem;
+    }
+    
+    /* Icon adjustments for RTL */
+    .feature-item .icon,
+    .service-item .icon {
+        margin: 0 0.5rem 1rem 0;
+    }
+    
+    /* Search form RTL */
+    .search-form {
+        direction: rtl;
+        text-align: right;
+    }
+    
+    .search-field {
+        text-align: right;
+        direction: rtl;
+    }
+}
